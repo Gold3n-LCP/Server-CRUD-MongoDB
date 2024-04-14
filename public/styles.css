@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: peachpuff;
+  margin: auto;
+}
+
+#craft-list {
+  display: flex;
+  margin: auto;
+}
+
+#content {
+  margin: auto;
+  padding-left: 5%;
+  width: 90%;
+}
+
+.image-container {
+  width: 100%;
+}
+
+#imgSect {
+  margin: 5px;
+}
+
+#add-link {
+  text-decoration: none;
+  color: green;
+  font-size: 50px;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: darkgreen;
+  }
+  50% {
+    color: rgb(110, 183, 110);
+  }
+  100% {
+    color: darkgreen;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.columns {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  max-width: 90%;
+}
+
+.columns img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two-columns div {
+  flex-basis: 50%;
+}
+
+#img-prev {
+  display: none;
+  width: 50%;
+  height: auto;
+}
+
+.columns-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+/* Adjust image size for specific cases */
+.custom-image-size {
+  width: 50%; /* Adjust as needed */
+  height: auto;
+}
+
+.craft {
+  flex-shrink: 0;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid navy;
+  background: skyblue;
+  width: 90%;
+}
+
+#craft-form input[type="text"] {
+  background-color: rgb(220, 245, 254);
+}
+
+button {
+  padding: 8px 16px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-supplies {
+  background-color: lightskyblue;
+  margin: 3px;
+}
+#cancel {
+  background-color: lightcoral;
+  margin: 3px;
+}
+#submit {
+  background-color: lightgreen;
+  margin: 3px;
+}
+
+/* Style the button */
+
+/* Hover effect */
+#add-supplies:hover {
+  background-color: skyblue; /* Change background color on hover */
+}
+
+/* Style the label as a button */
+.uploadButton {
+  padding: 8px 16px; /* Adjust padding as needed */
+  background-color: lightblue; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect */
+.uploadButton:hover {
+  background-color: skyblue; /* Change background color on hover */
+}
+
+.confirmation-text {
+  color: #333;
+  font-size: 16px;
+}
+
+.confirmation-buttons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

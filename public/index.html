@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+            Author: Lukas Palassis
+        -->
+    <title>Assignment17</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>Crafts<a href="#" id="add-link">+</a></h1>
+      <h2>Assignment 17:   Server Edit and Delete</h2>
+      </div>
+    </div>
+
+    <div id="content">
+            <div id="craft-list"></div>
+        <p>&copy; Gold3n-LCP (Palassis)</p>
+    </div>
+
+    <!-- The Modal -->
+      <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('dialog').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+              <section id="dialog-details">
+                <form id="craft-form" method="post" class="hidden">
+                  <input type="hidden" id="_id" name="_id">
+                    <p>
+                        <label for="name">Craft Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" name="description" required />
+                    </p>
+        
+                    
+                      <div class="columns-image">
+                        <section class="columns">
+                        <p id="img-prev-section">
+                            <img id="img-prev">
+                        </p>
+                        
+                        <p>
+  <!-- Label styled as button -->
+  <label for="img" class="uploadButton">Select An Image</label>
+  <!-- Hidden file input -->
+  <input type="file" id="img" name="img" accept="image/*" style="display: none" />
+</p>
+
+
+                        
+
+                        </section>
+                      </div>
+                        
+                      <p id="supplies-p">
+    <label class="inline">Supplies:</label>
+    <button id="add-supplies">Add Supplies</button>
+    <section id="supply-boxes"></section>
+</p>
+
+                    
+                      
+
+                    <div class="columns">
+                      <section id="one">
+                        <p>
+                        <button type="cancel" button id="cancel">Cancel</button>
+                    </p>
+                      </section>
+                      <section id="one">
+                        <p>
+                        <button type="submit" button id="submit">Save</button>
+                    </p>
+                        
+                      </section>
+                    </div>
+                    
+                    
+                </form>
+
+                <section id="craft-details" class="hidden">
+
+                </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
